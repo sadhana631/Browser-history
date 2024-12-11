@@ -1,3 +1,4 @@
+import {Component} from 'react'
 import './App.css'
 
 // These are the list used in the application. You can move them to any component needed.
@@ -90,11 +91,9 @@ class App extends Component {
     this.setState({latestHistoryList: updatedHistoryList})
   }
 
- 
   handleSearch = e => {
     this.setState({searchInput: e.target.value})
   }
-
 
   render() {
     const {searchInput, latestHistoryList} = this.state
@@ -168,6 +167,5 @@ class App extends Component {
     )
   }
 }
-
 
 export default App
